@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+android:id="@+id/nameText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentTop="true"
+android:layout_marginLeft="18dp"
+android:layout_marginTop="24dp"
+android:text="@string/nama"/>
+
+<EditText
+android:id="@+id/nama"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_alignTop="@+id/nameText"
+android:ems="10" android:inputType="text"/>
+<TextView
+android:id="@+id/umurText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignLeft="@+id/nameText"
+android:layout_below="@+id/nama"
+android:layout_marginTop="26dp"
+android:text="@string/umur"/>
+        <EditText
+android:id="@+id/umur"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_alignTop="@+id/umurText"
+android:ems="10"
+    android:inputType="text"/>
+    <TextView
+android:id="@+id/jeniskelaminText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignLeft="@+id/gridLayout1"
+android:layout_below="@+id/umur"
+android:layout_marginTop="19dp"
+android:text="@string/jeniskelamin"/>
+<GridLayout
+android:id="@+id/gridLayout1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignLeft="@+id/umurText"
+android:layout_below="@+id/umur"
+android:layout_marginTop="44dp">
+            <RadioGroup
+android:id="@+id/jeniskelamin"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<RadioButton
+android:id="@+id/femaleRadio"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:checked="true"
+android:text="@string/perempuan"/>
+                <RadioButton
+android:id="@+id/maleRadio"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:checked="true"
+android:text="@string/lakilaki"/>
+    </RadioGroup>
+    </GridLayout>
+<Button
+android:id="@+id/kirimdata"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignRight="@+id/gridLayout1"
+android:layout_below="@+id/gridLayout1"
+android:layout_marginTop="21dp"
+android:text="@string/kirimdata"
+android:onClick="kirimData"/>
+    </RelativeLayout>

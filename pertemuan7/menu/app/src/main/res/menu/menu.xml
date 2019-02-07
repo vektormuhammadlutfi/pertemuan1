@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:id="@+id/menu1"
+        android:title="Grup Baru"/>
+    <item  android:id="@+id/menu2"
+        android:title="Siaran Baru"/>
+    <item  android:id="@+id/menu3"
+        android:title="Menu 3"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_search"/>
+    <item android:id="@+id/menu4"
+        android:title="Setelan"/>
+</menu>
